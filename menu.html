@@ -7,6 +7,36 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
+	
+		<style>
+			.btn-circle {
+				font-family: "Roboto", sans-serif;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #9b8230;
+			color: #000;
+			font-size: 18px;
+			font-weight: bold;
+			border: 2px solid #000;
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+			cursor: pointer;
+			text-decoration: none;
+		}
+		
+		.btn-circle:hover {
+			transform: scale(1.1);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+		
+		.btn-circle:active {
+			transform: scale(0.9);
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+		}
+		</style>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -78,7 +108,7 @@
 						<div class="row align-items-center mb-5">
 							<div class="col-4 col-sm-3">
 								<img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-vainilla.jpg" alt="">
-								<h5 class="menu-price">Bs3</h5>
+								<button class="menu-price btn btn-circle" onclick="mandarAlLink()">Bs3</button>
 							</div>
 							<div class="col-8 col-sm-9">
 								<h4>Flan de vainilla</h4>
@@ -90,7 +120,7 @@
 						<div class="row align-items-center mb-5">
 							<div class="col-4 col-sm-3">
 								<img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-chocolate.jpg" alt="">
-								<h5 class="menu-price">Bs3</h5>
+								<button class="menu-price btn btn-circle">Bs3</button>
 							</div>
 							<div class="col-8 col-sm-9">
 								<h4>Flan de chocolate</h4>
@@ -104,11 +134,11 @@
 						<div class="row align-items-center mb-5">
 							<div class="col-4 col-sm-3">
 								<img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-mixto.jpg" alt="">
-								<h5 class="menu-price">Bs3</h5>
+								<button class="menu-price btn btn-circle">Bs3</button>
 							</div>
 							<div class="col-8 col-sm-9">
 								<h4>Chocolate y vainilla</h4>
-								<p class="m-0">	Cuando la suavidad de la vainilla se encuentra con la intensidad del
+								<p class="m-0">Cuando la suavidad de la vainilla se encuentra con la intensidad del
 									chocolate, nace esta obra maestra. Diseñado para quienes no quieren elegir entre dos
 									delicias, este flan es pura armonía</p>
 							</div>
@@ -116,7 +146,7 @@
 						<div class="row align-items-center mb-5">
 							<div class="col-4 col-sm-3">
 								<img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-mixto.jpg" alt="">
-								<h5 class="menu-price">Bs0</h5>
+								<button class="menu-price btn btn-circle">Bs0</button>
 							</div>
 							<div class="col-8 col-sm-9">
 								<h4>Otros</h4>
@@ -127,7 +157,8 @@
 				</div>
 			</div>
 		</div>
-    <!-- Menu End -->
+		
+		<!-- Menu End -->
 
 
     <!-- Footer Start -->
@@ -199,6 +230,13 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
+		<script>
+			function mandarAlLink() {
+				alert("Hello World!");
+			}
+		</script>
 </body>
 
 </html>
