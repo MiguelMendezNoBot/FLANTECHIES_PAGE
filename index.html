@@ -77,8 +77,6 @@
 						<a href="index.html" class="nav-item nav-link active">Principal</a>
 						<a href="about.html" class="nav-item nav-link">Sobre nosotros</a>
 						<a href="menu.html" class="nav-item nav-link">Menu</a>
-						<a href="testimonial.html" class="nav-item nav-link">Testimonios</a>
-						<a href="contact.html" class="nav-item nav-link">Contacto</a>
 					</div>
 				</div>
 			</nav>
@@ -187,7 +185,7 @@
 						<div class="row align-items-center mb-5">
 							<div class="col-4 col-sm-3">
 								<img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-vainilla.jpg" alt="">
-								<button class="menu-price btn btn-circle" onclick="mandarAlLink()">Bs3</button>
+								<button class="menu-price btn btn-circle" onclick="mensajeCompra('vanilla')">Bs3</button>
 							</div>
 							<div class="col-8 col-sm-9">
 								<h4>Flan de vainilla</h4>
@@ -199,7 +197,7 @@
 						<div class="row align-items-center mb-5">
 							<div class="col-4 col-sm-3">
 								<img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-chocolate.jpg" alt="">
-								<button class="menu-price btn btn-circle">Bs3</button>
+								<button class="menu-price btn btn-circle" onclick="mensajeCompra('chocolate')">Bs3</button>
 							</div>
 							<div class="col-8 col-sm-9">
 								<h4>Flan de chocolate</h4>
@@ -213,7 +211,7 @@
 						<div class="row align-items-center mb-5">
 							<div class="col-4 col-sm-3">
 								<img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-mixto.jpg" alt="">
-								<button class="menu-price btn btn-circle">Bs3</button>
+								<button class="menu-price btn btn-circle" onclick="mensajeCompra('vainilla y chocolate')">Bs3</button>
 							</div>
 							<div class="col-8 col-sm-9">
 								<h4>Chocolate y vainilla</h4>
@@ -245,56 +243,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonios</h4>
-                <h1 class="display-4">Lo que dicen nuestros clientes</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Tomas turbado</h4>
-                            <i>Profession</i>
-                        </div>
-                    </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Poco Mermela</h4>
-                            <i>Profession</i>
-                        </div>
-                    </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Elpo Jhon</h4>
-                            <i>Profession</i>
-                        </div>
-                    </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Elsa Capuntas</h4>
-                            <i>Profession</i>
-                        </div>
-                    </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- Testimonial End -->
 
 
@@ -367,6 +316,12 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+		<script>
+			function mensajeCompra(tipo) {
+				alert("Compro flan de " + tipo);
+			}
+		</script>
 </body>
 
 </html>
