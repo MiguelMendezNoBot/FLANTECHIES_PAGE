@@ -303,10 +303,13 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
+		
 		<script>
-			function mensajeCompra(tipo) {
-				alert("Compro flan de " + tipo);
+			function mensajeCompra(sabor) {
+				const telefono = "59175499593";
+				const mensaje = `Hola, me interesa comprar el flan de ${sabor}.`;
+				const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+				window.open(url, "_blank");
 			}
 		</script>
 </body>
